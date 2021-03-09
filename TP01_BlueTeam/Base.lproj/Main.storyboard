@@ -24,14 +24,6 @@
                                     <action selector="greyscaleBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7jz-mJ-Mfp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ene-5A-013">
-                                <rect key="frame" x="274" y="710" width="120" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Gaussian Blur"/>
-                                <connections>
-                                    <action selector="gaussBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4WX-md-nc7"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1s-WM-9yZ">
                                 <rect key="frame" x="148" y="710" width="97" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -61,6 +53,14 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ene-5A-013">
+                                <rect key="frame" x="274" y="710" width="120" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Gaussian Blur"/>
+                                <connections>
+                                    <action selector="gaussBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4WX-md-nc7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
