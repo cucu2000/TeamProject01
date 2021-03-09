@@ -61,6 +61,14 @@
                                     <action selector="gaussBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4WX-md-nc7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkA-7v-Mmb">
+                                <rect key="frame" x="133" y="781" width="127" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Change Image"/>
+                                <connections>
+                                    <action selector="changeImageBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bq2-Oa-Qcz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -75,10 +83,16 @@
                             <constraint firstItem="4qp-dR-reH" firstAttribute="leading" secondItem="ZDR-e8-wDT" secondAttribute="leading" constant="-317" id="Mqv-ND-Ut6"/>
                             <constraint firstItem="X1s-WM-9yZ" firstAttribute="leading" secondItem="VzL-Lg-vcI" secondAttribute="trailing" constant="33" id="Q8o-tO-DVX"/>
                             <constraint firstItem="X1s-WM-9yZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qtt-5O-6Za"/>
+                            <constraint firstItem="QkA-7v-Mmb" firstAttribute="centerX" secondItem="X1s-WM-9yZ" secondAttribute="centerX" id="SEt-6Q-x5a">
+                                <variation key="heightClass=compact-widthClass=regular" constant="-398"/>
+                            </constraint>
                             <constraint firstItem="4qp-dR-reH" firstAttribute="centerY" secondItem="VzL-Lg-vcI" secondAttribute="centerY" constant="65" id="UjW-b5-zH6"/>
                             <constraint firstItem="VzL-Lg-vcI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Vwy-Cv-C37"/>
                             <constraint firstItem="4qp-dR-reH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="WyQ-xe-AJB"/>
                             <constraint firstItem="4qp-dR-reH" firstAttribute="leading" secondItem="ZDR-e8-wDT" secondAttribute="leading" id="cfi-bt-8y5"/>
+                            <constraint firstItem="QkA-7v-Mmb" firstAttribute="top" secondItem="X1s-WM-9yZ" secondAttribute="bottom" constant="35" id="dGB-wk-alz">
+                                <variation key="heightClass=compact-widthClass=regular" constant="58"/>
+                            </constraint>
                             <constraint firstItem="VzL-Lg-vcI" firstAttribute="baseline" secondItem="X1s-WM-9yZ" secondAttribute="baseline" id="dhb-Td-E41"/>
                             <constraint firstItem="ZDR-e8-wDT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="i1R-3y-upI"/>
                             <constraint firstItem="ene-5A-013" firstAttribute="top" secondItem="X1s-WM-9yZ" secondAttribute="bottom" constant="58" id="iN2-hT-h3U"/>

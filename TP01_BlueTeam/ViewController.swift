@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var ImgView1: UIImageView!
     
@@ -15,11 +15,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
     
     @IBAction func greyscaleBtn(_ sender: UIButton) {
+        //Tristan
         let image = CIImage(image: ImgView1.image!)
         
         let filter = CIFilter(name: "CIColorMonochrome", parameters:
@@ -32,10 +33,45 @@ class ViewController: UIViewController {
     }
     
     @IBAction func sepiaBtn(_ sender: UIButton) {
+        //Milan
     }
     
     
     @IBAction func gaussBtn(_ sender: UIButton) {
+        //Kaleb
+        let image = CIImage(image: ImgView1.image!)
+        
+        let filter = CIFilter(name: "CIGaussianBlur", parameters: ["inputImage": image!, "inputRadius": 15])
+        
+        let outputImage = filter?.outputImage
+        
+        ImgView2.image = UIImage(ciImage: outputImage!)
+    }
+    
+    @IBAction func changeImageBtn(_ sender: UIButton) {
+        let imagePickerController = UIImagePickerController()
+        
+        imagePickerController.delegate = self
+        
+        self.present(imagePickerController, animated: true, completion: nil)
+    }
+    
+    
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        guard let
+                image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+        
+        else {
+            return
+        }
+        ImgView1.image = image
+        
+        picker.dismiss(animated: true, completion: nil)
     }
 }
 
