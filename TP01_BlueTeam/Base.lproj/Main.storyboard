@@ -20,16 +20,25 @@
                                 <rect key="frame" x="20" y="710" width="95" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Grey Scale"/>
+                                <connections>
+                                    <action selector="greyscaleBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7jz-mJ-Mfp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ene-5A-013">
-                                <rect key="frame" x="283" y="710" width="111" height="36"/>
+                                <rect key="frame" x="274" y="710" width="120" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Gausian Blur"/>
+                                <state key="normal" title="Gaussian Blur"/>
+                                <connections>
+                                    <action selector="gaussBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4WX-md-nc7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1s-WM-9yZ">
                                 <rect key="frame" x="148" y="710" width="97" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Sepia Tone"/>
+                                <connections>
+                                    <action selector="sepiaBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xxp-Te-vG4"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZDR-e8-wDT">
                                 <rect key="frame" x="56" y="356" width="302" height="184"/>
@@ -131,6 +140,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="ImgView1" destination="4qp-dR-reH" id="Qza-cb-2Ng"/>
+                        <outlet property="ImgView2" destination="ZDR-e8-wDT" id="uPT-xb-OKJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
