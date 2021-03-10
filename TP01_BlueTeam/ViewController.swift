@@ -34,6 +34,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBAction func sepiaBtn(_ sender: UIButton) {
         //Milan
+        let image = CIImage(image: ImgView1.image!)
+        
+        let filter = CIFilter(name: "CISepiaTone", parameters: ["inputImage": image!, "inputIntensity": 1.0])
+        
+        let outputImage = filter?.outputImage
+        
+        ImgView2.image = UIImage(ciImage: outputImage!)
+        
     }
     
     
